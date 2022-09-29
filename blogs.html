@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Know</title>
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <section>
+<!-- Accordian -->
+<div>
+<div id="accordion-color" data-accordion="collapse"
+    data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+    <h2 id="accordion-color-heading-1">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-gray-800 bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+            data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+            <span>Difference between var, let and const keywords in JavaScript?</span>
+            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion-color-body-1" class="" aria-labelledby="accordion-color-heading-1">
+        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-gray dark:text-gray-400"> In JavaScript, users can declare a variable using 3 keywords that are var, let, and const. In this article, we will see
+            the differences between the var, let, and const keywords. We will discuss the scope and other required concepts about
+            each keyword.
+            
+            var keyword in JavaScript: The var is the oldest keyword to declare a variable in JavaScript.
+            
+            Scope: Global scoped or function scoped. The scope of the var keyword is the global or function scope. It means
+            variables defined outside the function can be accessed globally, and variables defined inside a particular function can
+            be accessed within the function.</p>
+            <p class="text-gray-500 dark:text-gray-400"> 
+                <br>
+              <h1 class="font-bold text-3xl">Var</h1>
+             <p >Before the advent of ES6, var declarations ruled. There are issues associated with variables declared with var, though.
+            That is why it was necessary for new ways to declare variables to emerge. First, let's get to understand var more before
+            we discuss those issues.</p>
+            <br><br>
+            <h1 class="font-semibold text-xl">Scope of var</h1>
+            <p> Scope essentially means where these variables are available for use. var declarations are globally scoped or
+            function/locally scoped.
+            
+            The scope is global when a var variable is declared outside a function. This means that any variable that is declared
+            with var outside a function block is available for use in the whole window.
+            
+            var is function scoped when it is declared within a function. This means that it is available and can be accessed only
+            within that function.</p>
+            <br><br>
+            <h1 class="font-bold text-3xl">let</h1>
+            <p>let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It
+            also solves the problem with var that we just covered. Let's consider why this is so.</p>
+            <br><br>
+          <h1 class="font-semibold text-xl">let is block scoped</h1>
+          <p>A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+        
+        So a variable declared in a block with let is only available for use within that block.
+    Just like var, let declarations are hoisted to the top. Unlike var which is initialized as undefined, the let keyword is
+    not initialized. So if you try to use a let variable before declaration, you'll get a Reference Error.
+    </p>
+<br><br>
+<h1 class="font-bold text-3xl">Const</h1>
+<p>Variables declared with the const maintain constant values. const declarations share some similarities with let
+declarations.Like let declarations, const declarations can only be accessed within the block they were declared.</p>
+<br><br>
+<h1 class="font-semibold text-xl">const cannot be updated or re-declared </h1>
+<p> means that the value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared. So if we declare a variable with const.Every const declaration, therefore, must be initialized at the time of declaration.This behavior is somehow different when it comes to objects declared with const. While a const object cannot be updated, the properties of this objects can be updated.</p>
+
+            </p>
+        </div>
+    </div>
+    <h2 id="accordion-color-heading-2">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+            aria-controls="accordion-color-body-2">
+            <span>The Difference Between Regular Functions and Arrow Functions?</span>
+            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400"> Arrow function — also called fat arrow function— is a new feature introduced in ES6 that is a more concise syntax for
+            writing function expressions. While both regular JavaScript functions and arrow functions work in a similar manner,
+            there are certain differences between them.The arrow function example above allows a developer to accomplish the same result with fewer lines of code and
+            approximately half the typing.</p>
+            <p class="text-gray-500 dark:text-gray-400">
+              <h1 class="font-semibold">2. Arguments binding</h1>
+              <p>Arrow functions do not have an arguments binding. However, they have access to the arguments object of the closest
+            non-arrow parent function. Named and rest parameters are heavily relied upon to capture the arguments passed to arrow
+            functions.Arrow functions can never have duplicate named parameters, whether in strict or non-strict mode.With arrow functions, duplicate named arguments are always, regardless of strict or non-strict mode, invalid.</p>
+            </p>
+        </div>
+    </div>
+    <h2 id="accordion-color-heading-3">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+            aria-controls="accordion-color-body-3">
+            <span>What's the difference between of map,filter,find and forEach </span>
+            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400"> When we work with an array, it is an essential step to iterate on the array to access elements and performing some kind
+            of functionality on those elements to accomplish any task.
+            For example, If you have an array of marks obtained by 20 students and you want to calculate their GPA, if you have an
+            array of images and you want to render it on the frontend, etc. To manage such cases, you must have proper knowledge of
+            how to access the element of the array and how to operate on them.
+            
+            Other than the basic language constructs i.e. for loop, while loop, and do-while loop, there are two widely used methods
+            for iteration.
+            
+            .forEach() and .map(): These are the methods that are used to iterate on an array, more technically they invoke the
+            provided callback function for every element of an array.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400"> Example 1: Our objective is to create such a type of functionality that can give square values of the elements of a
+            given array. We have created two arrays, one is working with the forEach() and the other with the map(), and both
+            producing the same result. The element and index are being accessed inside the callback function and we are assigning
+            the square of each element at that index.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these:</p>
+            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                <li><a href="https://www.geeksforgeeks.org/difference-between-foreach-and-map-loop-in-javascript/#:~:text=Differences%20between%20forEach()%20and%20map()%20methods%3A&text=The%20forEach()%20method%20does,creates%20an%20entirely%20new%20array.&text=The%20forEach()%20method%20returns,to%20the%20provided%20callback%20function."
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Learn More</a></li>
+                <li><a href="https://www.codementor.io/@ogwurujohnson/foreach-map-filter-what-s-the-difference-jgvyy01ai" rel="nofollow"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Difference</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- part 2  -->
+<div id="accordion-collapse" data-accordion="collapse">
+    <h2 id="accordion-collapse-heading-1">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+            aria-controls="accordion-collapse-body-1">
+            <span>Why can use template String in JavaScript ?  </span>
+            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion-collapse-body-1" class="" aria-labelledby="accordion-collapse-heading-1">
+        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-gray-500 dark:text-gray-400"> plate strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and
+            expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create
+            strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags.
+            Tags are functions that take a string and the decomposed parts of the string as…</p>
+            <p class="text-gray-500 dark:text-gray-400"> This is a very simple example of a template string. All the content is constant and there are no variables or
+            expressions in it. To add variables and or expressions to a string, we can do the following. <a
+                    href="/docs/getting-started/introduction/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing
+                websites even faster with components on top of Tailwind CSS.</p>
+        </div>
+    </div>
+    <h2 id="accordion-collapse-heading-2">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+            aria-controls="accordion-collapse-body-2">
+            <span>Is there a Figma file available?</span>
+            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the
+                Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the
+                utility classes from Tailwind CSS and components from Flowbite.</p>
+        </div>
+    </div>
+    <h2 id="accordion-collapse-heading-3">
+        <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+            aria-controls="accordion-collapse-body-3">
+            <span>What are the differences between Flowbite and Tailwind UI?</span>
+            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </h2>
+    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from
+                Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite,
+                Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of
+                two worlds.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                <li><a href="https://flowbite.com/pro/"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                <li><a href="https://tailwindui.com/" rel="nofollow"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+            </section>
+
+        </main>
+    </body>
+
+</html>
