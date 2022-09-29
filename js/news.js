@@ -9,7 +9,7 @@ const categoriesDisplay = (categories) => {
     const categoriesDiv = document.getElementById('categories-container');
 
     for (let category of categories) {
-        // console.log(category)
+         
 
         const createDiv = document.createElement('div');
         createDiv.classList.add('sm:block', 'bg-primary', 'sm:bg-white', 'sm:text-black', 'text-white');
