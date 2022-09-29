@@ -5,9 +5,7 @@ const categories = () => {
 }
 
 const categoriesDisplay = (categories) => {
-    // console.log(categories)
-    const categoriesDiv = document.getElementById('categories-container');
-
+    const categoriesDiv = document.getElementById('categories-container')
     for (let category of categories) {
          
 
